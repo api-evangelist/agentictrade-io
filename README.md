@@ -66,7 +66,7 @@
 
 AgenticTrade is an AI service marketplace that connects creators of AI services with AI agents that need them. Providers list their services, set pricing, and AI agents automatically discover, invoke, and pay per use. The platform handles discovery, health monitoring, and payment processing, enabling seamless integration without marketing, invoicing, or manual setup.
 
-**Areas:** AI · Marketplace · Services · Agents · Payments · Integration
+**Areas:** Artificial Intelligence · Marketplace · Services · Agents · Payments · Integration
 
 ## AgenticTrade on APIs.io
 
@@ -127,22 +127,48 @@ Everything profiled for AgenticTrade is published on APIs.io rather than in this
 
 Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [agentictrade-io-mcp.yml](https://apis.io/servers/agentictrade-io/agentictrade-io-mcp-yml/)
+
 #### Agentic access (1)
 
 Which operations an agent can call, which act, and which need a human in the loop.
 
-- [Agentictrade Io Agentic Access](https://apis.io/agentic-access/agentictrade-io/agentictrade-io-agentic-access/)
+- [AgenticTrade Agentic Access](https://apis.io/agentic-access/agentictrade-io/agentictrade-io-agentic-access/)
 
-#### JSON Schema (6)
+#### JSON Schema (30)
 
 The data models the API reads and writes.
 
+- [AddMemberRequest](https://apis.io/schemas/agentictrade-io/agentictrade-io-add-member-request/)
+- [AddQualityGateRequest](https://apis.io/schemas/agentictrade-io/agentictrade-io-add-quality-gate-request/)
+- [AddRoutingRuleRequest](https://apis.io/schemas/agentictrade-io/agentictrade-io-add-routing-rule-request/)
+- [AppealRequest](https://apis.io/schemas/agentictrade-io/agentictrade-io-appeal-request/)
+- [ApplyCodeRequest](https://apis.io/schemas/agentictrade-io/agentictrade-io-apply-code-request/)
+- [BalanceResponse](https://apis.io/schemas/agentictrade-io/agentictrade-io-balance-response/)
+- [BatchCreateKeysRequest](https://apis.io/schemas/agentictrade-io/agentictrade-io-batch-create-keys-request/)
+- [BatchDepositsRequest](https://apis.io/schemas/agentictrade-io/agentictrade-io-batch-deposits-request/)
 - [Body_portal_create_service_portal_services_create_post](https://apis.io/schemas/agentictrade-io/agentictrade-io-body-portal-create-service-portal-services-create-post/)
 - [Body_register_submit_portal_register_post](https://apis.io/schemas/agentictrade-io/agentictrade-io-body-register-submit-portal-register-post/)
+- [CreateKeyRequest](https://apis.io/schemas/agentictrade-io/agentictrade-io-create-key-request/)
+- [CreateTeamRequest](https://apis.io/schemas/agentictrade-io/agentictrade-io-create-team-request/)
+- [DepositRequest](https://apis.io/schemas/agentictrade-io/agentictrade-io-deposit-request/)
+- [DepositResponse](https://apis.io/schemas/agentictrade-io/agentictrade-io-deposit-response/)
+- [DownloadGateRequest](https://apis.io/schemas/agentictrade-io/agentictrade-io-download-gate-request/)
+- [DownloadGateResponse](https://apis.io/schemas/agentictrade-io/agentictrade-io-download-gate-response/)
+- [DripProcessResponse](https://apis.io/schemas/agentictrade-io/agentictrade-io-drip-process-response/)
+- [DripTriggerRequest](https://apis.io/schemas/agentictrade-io/agentictrade-io-drip-trigger-request/)
+- [DripTriggerResponse](https://apis.io/schemas/agentictrade-io/agentictrade-io-drip-trigger-response/)
+- [FileReportRequest](https://apis.io/schemas/agentictrade-io/agentictrade-io-file-report-request/)
 - [OnboardRequest](https://apis.io/schemas/agentictrade-io/agentictrade-io-onboard-request/)
+- [RegisterProviderRequest](https://apis.io/schemas/agentictrade-io/agentictrade-io-register-provider-request/)
 - [RegisterServiceRequest](https://apis.io/schemas/agentictrade-io/agentictrade-io-register-service-request/)
 - [_StatusResponse](https://apis.io/schemas/agentictrade-io/agentictrade-io-status-response/)
-- [UpdateServiceRequest](https://apis.io/schemas/agentictrade-io/agentictrade-io-update-service-request/)
+- [SubscribeRequest](https://apis.io/schemas/agentictrade-io/agentictrade-io-subscribe-request/)
+- …and 5 more published on APIs.io
 
 #### JSON-LD (1)
 
@@ -154,7 +180,7 @@ Linked-data contexts for the provider's vocabulary.
 
 OpenAPI overlays, including conversational phrasing for each operation.
 
-- [Agentictrade Io Openapi Overlay](https://apis.io/overlays/agentictrade-io/agentictrade-io-openapi-overlay/)
+- [AgenticTrade Openapi Overlay](https://apis.io/overlays/agentictrade-io/agentictrade-io-openapi-overlay/)
 
 #### Governance rules (1)
 
@@ -166,8 +192,8 @@ Spectral rulesets for the provider's contracts.
 
 Authentication, trust centre, and vulnerability disclosure.
 
-- [Agentictrade Io Domain Security](https://apis.io/security/agentictrade-io/agentictrade-io-domain-security/)
-- [Agentictrade Io Vulnerability Disclosure](https://apis.io/security/agentictrade-io/agentictrade-io-vulnerability-disclosure/)
+- [AgenticTrade Domain Security](https://apis.io/security/agentictrade-io/agentictrade-io-domain-security/)
+- [AgenticTrade Vulnerability Disclosure](https://apis.io/security/agentictrade-io/agentictrade-io-vulnerability-disclosure/)
 
 ## Where to find this API
 
@@ -188,23 +214,23 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 49.3** — developing · rubric 0.26.0 · scored 2026-11-01
+**Kin Score 45.1** — developing · rubric 0.28.1 · scored 2026-11-21
 
 | Facet | Score |
 |---|---|
-| Discoverability | 56.7 |
-| Contract quality | 51.9 |
-| Contract governance | 79.1 |
-| Operational transparency | 31.6 |
+| Discoverability | 73.3 |
+| Contract quality | 52.4 |
+| Contract governance | 22.0 |
+| Operational transparency | 33.3 |
 | Developer ergonomics | 39.8 |
-| Access clarity | 44.7 |
+| Access clarity | 51.1 |
 
-**Agent readiness 34.7** — agent-ready
+**Agent readiness 27.4** — agent-aware
 
 | Agent-readiness dimension | Result |
 |---|---|
 | Spec Presence | yes |
-| Agentic Access | unknown |
+| Agentic Access | derived (partial credit) |
 | Reversibility Documented | — |
 | MCP Server | documented (partial credit) |
 | Auth Clarity | — |
@@ -225,6 +251,9 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Pagination Ratio | na |
 | Operation Distinctiveness | mostly (partial credit) |
 | MCP Tool Quality | na |
+| Onboarding Descriptor | — |
+| Dns Aid Index | na |
+| Markdown Negotiation | na |
 
 **Regulatory alignment 20.8** — Payments
 
